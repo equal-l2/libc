@@ -1311,6 +1311,9 @@ pub const PTRACE_FORK: ::c_int = 0x0002;
 
 pub const WCONTINUED: ::c_int = 8;
 
+pub const BIOCGRSIG: ::c_ulong = 0x40044272;
+pub const BIOCSRSIG: ::c_ulong = 0x80044273;
+
 fn _ALIGN(p: usize) -> usize {
     (p + _ALIGNBYTES) & !_ALIGNBYTES
 }
